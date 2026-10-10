@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geofrey Dave Cifra | PHP Developer</title>
+  <meta name="description" content="Portfolio of Geofrey Dave Cifra, PHP developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#home">Geofrey Dave Cifra</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav class="nav" id="nav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hello">Hi, I'm</p>
+      <h1>John Louie Buatista</h1>
+      <p class="role">PHP developer creating web applications.</p>
+      <p class="lead">I build websites and systems using PHP. Explore my projects or talk to me about the solution you want to create.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <pre class="code-card" aria-label="Short PHP code about Geofrey"><code><span class="c">&lt;?php</span>
+<span class="v">$developer</span> = [
+  <span class="s">'name'</span> =&gt; <span class="s">'John Louie Buatista'</span>,
+  <span class="s">'language'</span> =&gt; <span class="s">'PHP'</span>,
+  <span class="s">'focus'</span> =&gt; <span class="s">'Web development'</span>,
+];
+
+<span class="k">echo</span> <span class="s">"Let's build something."</span>;</code></pre>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div class="photo" role="img" aria-label="Geofrey's photo area">
+        <img src="images/louie.jpg" alt="Photo of Geofrey Dave Cifra"> -->
+        <span>GC</span>
+      </div>
+      <div class="prose">
+        <p>I'm Geofrey Dave Cifra, a PHP-focused developer. I enjoy creating clean, user-friendly websites and systems that work smoothly.</p>
+        <p>My projects are built around PHP, from simple websites to database-driven systems.</p>
+        <p class="note">Tip: replace these paragraphs with your own story: where you study or work, and what you want to learn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <div class="grid three">
+      <article class="card">
+        <h3>PHP web development</h3>
+        <p>Building websites and web applications using PHP, from design to working code.</p>
+      </article>
+      <article class="card">
+        <h3>Database-driven systems</h3>
+        <p>Systems with login, forms, and data records stored in a database.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive websites</h3>
+        <p>Pages that look great on mobile phones, tablets, and desktop computers.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <p class="sub">Technologies I use. Edit the list to match your real skills.</p>
+    <ul class="tags">
+      <li class="main">PHP</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>MySQL</li>
+      <li>Git</li>
+      <li>VS Code</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <p class="sub">Sample placeholders. Replace them with your own PHP projects (title, description, and links).</p>
+    <div class="grid three single-project">
+      <article class="card project">
+        <a class="project-image" href="https://miyummy2026.free.nf" target="_blank" rel="noopener" aria-label="Open Mi Yummy App">
+          <img src="images/logo.png" alt="Mi Yummy App preview">
+        </a>
+        <h3>Mi Yummy App</h3>
+        <p>A food ordering and menu management application built with PHP, designed to make online ordering simple and efficient.</p>
+        <ul class="tags small"><li>PHP</li><li>MySQL</li></ul>
+        <div class="links">
+          <a href="https://your-mi-yummy-app-link.com" target="_blank" rel="noopener">View system</a>
+          <a href="#" target="_blank" rel="noopener">Source code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p class="sub">Write your message. Your email app will open with a pre-filled message to send to Geofrey.</p>
+    <form class="form" id="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required autocomplete="name">
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Geofrey Dave Cifra</p>
+  <p><a href="#home">Back to top</a></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
